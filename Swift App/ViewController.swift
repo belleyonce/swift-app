@@ -20,8 +20,13 @@ class ViewController: UIViewController {
     
     
     @IBAction func buttonTapped(_ sender: AnyObject) {
+        @IBAction func button(_ sender: UIButton) {
+        }
+        @IBAction func button2Tapped(_ sender: AnyObject) {
+        }
+        @IBOutlet weak var button2Tapped: UIButton!
         
-        let addition = true 
+        let addition = true
         
         if addition {
             theLabel.text = "Answer: \(Double(text1.text!)! + Double(text2.text!)!)"
